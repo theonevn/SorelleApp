@@ -2,4 +2,10 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="sorelle_fundo">#F5EFE8</color>
+    <color name="sorelle_marrom">#3D2B24</color>
+    <color name="sorelle_verde">#2D3E2D</color>
+    <color name="sorelle_dourado">#B8935A</color>
+    <color name="sorelle_bege_card">#E8DFD0</color>
 </resources>

@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class ProdutosActivity extends AppCompatActivity {
 
-    Produtos serum;
+    Produto serum;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,12 +16,12 @@ public class ProdutosActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_produtos);
 
-        serum = new Produtos("Sérum Açaí", 89.90);
+        serum = Catalogo.getProdutos().get(0);
 
         Button btnSerum = findViewById(R.id.btnSerum);
 
         btnSerum.setOnClickListener(v -> {
-            System.out.println(serum.nome);
+            System.out.println(serum.getNome());
         });
     }
 }

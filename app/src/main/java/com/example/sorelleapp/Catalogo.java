@@ -1,0 +1,24 @@
+package com.example.sorelleapp;
+
+import java.util.ArrayList;
+import java.util.List;
+
+    public class Catalogo {
+
+        private static final List<Produto> PRODUTOS = new ArrayList<>();
+
+        static {
+            PRODUTOS.add(new Produto("Sérum Açaí",
+                    "Bioativos puros da floresta.", 89.90, "Vegano", 1));
+            PRODUTOS.add(new Produto("Creme Castanha",
+                    "Hidratação intensa e prolongada.", 55.90, "Reciclado", 3));
+            PRODUTOS.add(new Produto("Óleo Andiroba",
+                    "Regenerador natural da pele.", 120.00, "Comunitário", 1));
+            PRODUTOS.add(new Produto("Kit Ritual da Mata",
+                    "Experiência de spa sustentável.", 210.50, "Impacto Triplo", 3));
+        }
+
+        public static List<Produto> getProdutos() {
+            return PRODUTOS;
+        }
+    }
