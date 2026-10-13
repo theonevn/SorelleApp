@@ -11,7 +11,8 @@ public class Sacola {
 
     private final Map<Produto, Integer> itens = new LinkedHashMap<>();
 
-    private Sacola() { }
+    private Sacola() {
+    }
 
     public static Sacola getInstancia() {
         return INSTANCIA;
@@ -57,10 +58,20 @@ public class Sacola {
         for (int quantidade : itens.values()) {
             total += quantidade;
         }
+
         return total;
+
     }
 
     public void limpar() {
         itens.clear();
+    }
+
+    public int getArvoresTotal() {
+        int total = 0;
+        for (Map.Entry<Produto, Integer> item : itens.entrySet()) {
+            total += item.getKey().getArvores() * item.getValue();
+        }
+        return total;
     }
 }

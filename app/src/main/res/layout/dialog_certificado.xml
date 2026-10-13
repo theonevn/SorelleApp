@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gerar certificado"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:textColor="@color/sorelle_marrom" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Como deseja ser chamado no seu certificado oficial de impacto ambiental?"
+        android:textSize="14sp"
+        android:textColor="@color/sorelle_marrom" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="Nome completo">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName|textCapWords" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Total"
+            android:textColor="@color/sorelle_marrom" />
+
+        <TextView
+            android:id="@+id/tvTotalDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="@color/sorelle_marrom" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnConfirmar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="16dp"
+        android:text="Confirmar Compra"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/sorelle_marrom"
+        app:cornerRadius="28dp" />
+
+    <Button
+        android:id="@+id/btnCancelar"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="8dp"
+        android:text="Cancelar"
+        android:textColor="@color/sorelle_marrom"
+        app:cornerRadius="28dp" />
+
+</LinearLayout>

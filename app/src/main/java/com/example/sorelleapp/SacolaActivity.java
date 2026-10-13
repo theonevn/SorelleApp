@@ -1,0 +1,51 @@
+package com.example.sorelleapp;
+
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import java.util.Locale;
+
+public class SacolaActivity extends AppCompatActivity {
+
+    private RecyclerView rvSacola;
+    private TextView tvTotal, tvVazio;
+    private Button btnFinalizar;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        EdgeToEdge.enable(this);
+        setContentView(R.layout.activy_sacola);
+
+        rvSacola = findViewById(R.id.rvSacola);
+        tvTotal = findViewById(R.id.tvTotal);
+        tvVazio = findViewById(R.id.tvVazio);
+        btnFinalizar = findViewById(R.id.btnFinalizar);
+
+        rvSacola.setLayoutManager(new LinearLayoutManager(this));
+        rvSacola.setAdapter(new SacolaAdapter(this::atualizarTela));
+
+        btnFinalizar.setOnClickListener(v ->
+                Toast.makeText(this, "Certificado: próximo passo!", Toast.LENGTH_SHORT).show());
+
+        atualizarTela();
+    }
+
+    private void atualizarTela() {
+        Sacola sacola = Sacola.getInstancia();
+        boolean vazia = sacola.getItens().isEmpty();
+
+        tvVazio.setVisibility(vazia ? View.VISIBLE : View.GONE);
+        rvSacola.setVisibility(vazia ? View.GONE : View.VISIBLE);
+        btnFinalizar.setEnabled(!vazia);
+        tvTotal.setText(String.format(new Locale("pt", "BR"), "R$ %.2f", sacola.getTotal()));
+    }
+}
