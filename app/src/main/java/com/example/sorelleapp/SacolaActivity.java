@@ -1,10 +1,10 @@
 package com.example.sorelleapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -33,8 +33,17 @@ public class SacolaActivity extends AppCompatActivity {
         rvSacola.setLayoutManager(new LinearLayoutManager(this));
         rvSacola.setAdapter(new SacolaAdapter(this::atualizarTela));
 
-        btnFinalizar.setOnClickListener(v ->
-                Toast.makeText(this, "Certificado: próximo passo!", Toast.LENGTH_SHORT).show());
+        btnFinalizar.setOnClickListener(v -> {
+            CertificadoBottomSheet sheet = new CertificadoBottomSheet();
+            sheet.setOnConfirmarListener(nome -> {
+                int arvores = Sacola.getInstancia().getArvoresTotal();
+                ImpactStorage.registrarCompra(this, nome, arvores);
+                Sacola.getInstancia().limpar();
+                startActivity(new Intent(this, ImpactoActivity.class));
+                finish();
+            });
+            sheet.show(getSupportFragmentManager(), "certificado");
+        });
 
         atualizarTela();
     }

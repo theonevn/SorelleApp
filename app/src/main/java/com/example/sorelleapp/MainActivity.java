@@ -3,6 +3,7 @@ package com.example.sorelleapp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,9 +17,19 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         Button btnProdutos = findViewById(R.id.btnProdutos);
+        Button btnImpacto = findViewById(R.id.btnImpact);
+        TextView tvSair = findViewById(R.id.tvSair);
 
-        btnProdutos.setOnClickListener(v -> {
-            Intent intent = new Intent(MainActivity.this, ProdutosActivity.class);
+        btnProdutos.setOnClickListener(v ->
+                startActivity(new Intent(MainActivity.this, ProdutosActivity.class)));
+
+        btnImpacto.setOnClickListener(v ->
+                startActivity(new Intent(MainActivity.this, ImpactoActivity.class)));
+
+        tvSair.setOnClickListener(v -> {
+            UsuarioStorage.setLogado(this, false);
+            Intent intent = new Intent(this, LoginActivity.class);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             startActivity(intent);
         });
     }

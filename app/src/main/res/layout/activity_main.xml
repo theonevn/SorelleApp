@@ -76,6 +76,26 @@
 
         </LinearLayout>
 
+        <Button
+            android:id="@+id/btnImpact"
+            style="@style/Widget.Material3.Button.OutlinedButton"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:text="Ver meu impacto"
+            android:textColor="@color/sorelle_marrom"
+            app:strokeColor="@color/sorelle_dourado"
+            app:cornerRadius="28dp" />
+        <TextView
+            android:id="@+id/tvSair"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="Sair"
+            android:textColor="@color/sorelle_marrom"
+            android:clickable="true"
+            android:focusable="true" />
     </LinearLayout>
 
 </ScrollView>
