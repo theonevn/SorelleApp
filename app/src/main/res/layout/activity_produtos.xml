@@ -22,8 +22,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Produtos"
-            android:textSize="30sp"
-            android:textStyle="bold"
+            android:textSize="32sp"
+            android:fontFamily="@font/cormorant_semibold"
             android:textColor="@color/sorelle_marrom" />
 
         <Button

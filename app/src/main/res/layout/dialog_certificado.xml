@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Gerar certificado"
-        android:textSize="26sp"
+        android:textSize="28sp"
         android:textStyle="bold"
         android:textColor="@color/sorelle_marrom" />
 

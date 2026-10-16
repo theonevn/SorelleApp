@@ -25,12 +25,6 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".HomeActivity"
-            android:exported="false"
-            android:label="@string/title_activity_home"
-            android:theme="@style/Theme.SorelleApp"
-            android:windowSoftInputMode="adjustResize" />
-        <activity
             android:name=".ProdutosActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />

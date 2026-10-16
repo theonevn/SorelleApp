@@ -4,6 +4,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -37,6 +38,7 @@ public class ProdutoAdapter extends RecyclerView.Adapter<ProdutoAdapter.ProdutoV
     @Override
     public void onBindViewHolder(@NonNull ProdutoViewHolder holder, int position) {
         Produto produto = produtos.get(position);
+        holder.ivProduto.setImageResource(produto.getImagem());
 
         holder.tvTag.setText(produto.getTag());
         holder.tvNome.setText(produto.getNome());
@@ -57,10 +59,11 @@ public class ProdutoAdapter extends RecyclerView.Adapter<ProdutoAdapter.ProdutoV
     static class ProdutoViewHolder extends RecyclerView.ViewHolder {
         TextView tvTag, tvNome, tvDescricao, tvPreco, tvArvores;
         Button btnAdicionar;
-
+        ImageView ivProduto;
         ProdutoViewHolder(@NonNull View itemView) {
             super(itemView);
-            tvTag = itemView.findViewById(R.id.tvTag);
+            ivProduto = itemView.findViewById(R.id.ivProduto);
+            tvTag = itemView.findViewById(R.id.tvTag);tvTag = itemView.findViewById(R.id.tvTag);
             tvNome = itemView.findViewById(R.id.tvNome);
             tvDescricao = itemView.findViewById(R.id.tvDescricao);
             tvPreco = itemView.findViewById(R.id.tvPreco);

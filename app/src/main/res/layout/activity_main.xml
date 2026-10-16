@@ -19,7 +19,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="SORELLE"
-            android:textSize="26sp"
+            android:textSize="28sp"
             android:letterSpacing="0.15"
             android:textColor="@color/sorelle_marrom" />
 
@@ -51,7 +51,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Beleza que regenera a vida."
-                android:textSize="32sp"
+                android:textSize="36sp"
                 android:textStyle="bold"
                 android:textColor="@color/white"
                 android:layout_marginTop="12dp" />

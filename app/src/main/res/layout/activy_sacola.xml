@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Sacola"
-        android:textSize="30sp"
+        android:textSize="32sp"
         android:textStyle="bold"
         android:textColor="@color/sorelle_marrom"
         android:paddingStart="24dp"
