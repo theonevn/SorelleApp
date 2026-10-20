@@ -1,4 +1,4 @@
-package com.example.sorelleapp;
+package com.example.sorelleapp.data;
 
 import android.content.Context;
 import android.content.SharedPreferences;

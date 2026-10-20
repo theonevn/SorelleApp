@@ -1,4 +1,4 @@
-package com.example.sorelleapp;
+package com.example.sorelleapp.ui.impacto;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,7 +10,11 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.sorelleapp.R;
+
 import java.util.List;
+
+import com.example.sorelleapp.model.Certificado;
 
 public class CertificadoAdapter extends RecyclerView.Adapter<CertificadoAdapter.CertificadoViewHolder> {
 

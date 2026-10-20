@@ -1,4 +1,4 @@
-package com.example.sorelleapp;
+package com.example.sorelleapp.ui.impacto;
 
 import android.os.Bundle;
 import android.view.View;
@@ -9,7 +9,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.sorelleapp.R;
+import com.example.sorelleapp.data.ImpactStorage;
+
 import java.util.List;
+
+import com.example.sorelleapp.model.Certificado;
 
 public class ImpactoActivity extends AppCompatActivity {
 

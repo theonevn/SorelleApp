@@ -1,4 +1,4 @@
-package com.example.sorelleapp;
+package com.example.sorelleapp.ui.produtos;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +9,11 @@ import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.sorelleapp.R;
+import com.example.sorelleapp.data.Catalogo;
+import com.example.sorelleapp.data.Sacola;
+import com.example.sorelleapp.ui.sacola.SacolaActivity;
 
 public class ProdutosActivity extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package com.example.sorelleapp;
+package com.example.sorelleapp.ui.login;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +10,9 @@ import android.widget.Toast;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.sorelleapp.ui.home.MainActivity;
+import com.example.sorelleapp.R;
+import com.example.sorelleapp.data.UsuarioStorage;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 

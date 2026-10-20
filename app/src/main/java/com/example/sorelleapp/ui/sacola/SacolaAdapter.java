@@ -1,4 +1,4 @@
-package com.example.sorelleapp;
+package com.example.sorelleapp.ui.sacola;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,9 +9,14 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.sorelleapp.R;
+import com.example.sorelleapp.data.Sacola;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
+
+import com.example.sorelleapp.model.Produto;
 
 public class SacolaAdapter extends RecyclerView.Adapter<SacolaAdapter.SacolaViewHolder> {
 

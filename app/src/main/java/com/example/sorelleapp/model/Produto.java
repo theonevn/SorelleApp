@@ -1,4 +1,4 @@
-package com.example.sorelleapp;
+package com.example.sorelleapp.model;
 
 public class Produto {
     private final String nome;

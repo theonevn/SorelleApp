@@ -1,7 +1,11 @@
-package com.example.sorelleapp;
+package com.example.sorelleapp.data;
+
+import com.example.sorelleapp.R;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import com.example.sorelleapp.model.Produto;
 
 public class Catalogo {
 

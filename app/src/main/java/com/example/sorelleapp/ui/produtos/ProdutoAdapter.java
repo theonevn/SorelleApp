@@ -1,4 +1,4 @@
-package com.example.sorelleapp;
+package com.example.sorelleapp.ui.produtos;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,8 +10,12 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.sorelleapp.R;
+
 import java.util.List;
 import java.util.Locale;
+
+import com.example.sorelleapp.model.Produto;
 
 public class ProdutoAdapter extends RecyclerView.Adapter<ProdutoAdapter.ProdutoViewHolder> {
 

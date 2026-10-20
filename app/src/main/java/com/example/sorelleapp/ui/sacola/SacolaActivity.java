@@ -1,4 +1,4 @@
-package com.example.sorelleapp;
+package com.example.sorelleapp.ui.sacola;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -10,6 +10,11 @@ import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.sorelleapp.ui.impacto.ImpactoActivity;
+import com.example.sorelleapp.R;
+import com.example.sorelleapp.data.ImpactStorage;
+import com.example.sorelleapp.data.Sacola;
 
 import java.util.Locale;
 

@@ -1,9 +1,11 @@
-package com.example.sorelleapp;
+package com.example.sorelleapp.data;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+
+import com.example.sorelleapp.model.Produto;
 
 public class Sacola {
 

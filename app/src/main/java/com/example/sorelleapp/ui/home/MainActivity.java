@@ -1,4 +1,4 @@
-package com.example.sorelleapp;
+package com.example.sorelleapp.ui.home;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,6 +7,12 @@ import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.sorelleapp.ui.impacto.ImpactoActivity;
+import com.example.sorelleapp.ui.produtos.ProdutosActivity;
+import com.example.sorelleapp.R;
+import com.example.sorelleapp.data.UsuarioStorage;
+import com.example.sorelleapp.ui.login.LoginActivity;
 
 public class MainActivity extends AppCompatActivity {
 

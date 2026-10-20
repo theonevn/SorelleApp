@@ -1,4 +1,4 @@
-package com.example.sorelleapp;
+package com.example.sorelleapp.data;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -12,6 +12,8 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
+
+import com.example.sorelleapp.model.Certificado;
 
 public class ImpactStorage {
 

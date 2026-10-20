@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SorelleApp">
         <activity
-            android:name=".LoginActivity"
+            android:name=".ui.login.LoginActivity"
             android:exported="true"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
@@ -22,17 +22,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.home.MainActivity"
             android:exported="false" />
         <activity
-            android:name=".ProdutosActivity"
+            android:name=".ui.produtos.ProdutosActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".SacolaActivity"
+            android:name=".ui.sacola.SacolaActivity"
             android:exported="false" />
         <activity
-            android:name=".ImpactoActivity"
+            android:name=".ui.impacto.ImpactoActivity"
             android:exported="false" />
     </application>
 
