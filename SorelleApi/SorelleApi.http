@@ -1,0 +1,6 @@
+@SorelleApi_HostAddress = http://localhost:5126
+
+GET {{SorelleApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
